@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 10:28:57 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/09 11:48:37 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:09:53 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s[a] = '\0';
 	return (s);
 }
+
+/*
+int main()
+{
+	char x[] = "achraf";
+	char s[] = " sabbar";
+	printf("%s", ft_strjoin(x, s));
+}
+*/

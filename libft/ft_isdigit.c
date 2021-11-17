@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 08:39:44 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/08 08:39:47 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:04:32 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,9 @@ int	ft_isdigit(int c)
 	else
 		return (1);
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_isdigit(55));
+}
+*/

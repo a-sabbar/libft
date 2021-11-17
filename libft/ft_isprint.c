@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:32:13 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/07 19:18:15 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:04:50 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,9 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_isprint(55));
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 10:06:41 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/12 19:55:48 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:07:09 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,10 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	else
 		return (0);
 }
-// int main() {
-//     printf("%d\n", ft_memcmp("salut", "salut", 5));
-//     printf("%d", memcmp("salut", "salut", 5));
-//     return 0;
-// }
+/*
+int main() {
+    printf("%d\n", ft_memcmp("salut", "salut", 5));
+    printf("%d", memcmp("salut", "salut", 5));
+    return 0;
+}
+*/

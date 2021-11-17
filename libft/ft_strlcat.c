@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 19:35:05 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/13 18:10:12 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:13:34 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,12 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[ld] = '\0';
 	return (rtn);
 }
-// int main()
-// {
-// 	char d[]= "rrrrrrrrrrrrrrr";
-// 	char s[]= "rrrrrrrrrrrrrrr";
-// 	printf("%lu\n", ft_strlcat(d, d, 15));
-// 	printf("%lu", strlcat(d, d, 15));
-// }
+/*
+int main()
+{
+	char d[]= "acharf";
+	char s[]= "sabbar";
+	printf("%lu\n", ft_strlcat(d, d, 5));
+	printf("%lu", strlcat(d, d, 5));
+}
+*/

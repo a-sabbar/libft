@@ -6,11 +6,11 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:18:21 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/13 15:43:06 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/16 13:17:59 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 #include <string.h>
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t n)

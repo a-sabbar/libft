@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/07 09:44:20 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/13 17:46:14 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/16 13:23:51 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub [x] = '\0';
 	return (sub);
 }
+
+// int main()
+// {
+// 	char	s[] = "achraf sabbar ";
+// 	printf("%s", ft_substr(s, 9, 3));
+// }

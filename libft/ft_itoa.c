@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 14:39:40 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/10 14:41:33 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:05:00 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,9 @@ char	*ft_itoa(int n)
 	else
 		return (ft_p(n));
 }
-// int main()
-// {
-//   printf("%s", ft_itoa(214748364));
-// }
+/*
+int main()
+{
+  printf("%s", ft_itoa(214748364));
+}
+*/

@@ -1,35 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 10:50:33 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:09:30 by asabbar          ###   ########.fr       */
+/*   Created: 2021/11/15 12:47:16 by asabbar           #+#    #+#             */
+/*   Updated: 2021/11/17 12:05:51 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	i;
+	t_list	*tmp;
 
-	i = 0;
-	while (i <= ft_strlen(str))
+	tmp = lst;
+	while (tmp)
 	{
-		if (str[i] == (char)c)
-			return (&((char *)str)[i]);
-		i++;
+		f(tmp->content);
+		tmp = tmp->next;
 	}
-	return (0);
 }
 /*
-int main ()
-{
-  char s[] = "league of legends";
-  int c = 's';
-  printf("%s", ft_strchr(s, c));
-}
 */

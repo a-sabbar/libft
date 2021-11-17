@@ -1,35 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 10:50:33 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:09:30 by asabbar          ###   ########.fr       */
+/*   Created: 2021/11/14 21:13:46 by asabbar           #+#    #+#             */
+/*   Updated: 2021/11/17 12:06:42 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+int	ft_lstsize(t_list *lst)
 {
-	size_t	i;
+	t_list	*head;
+	int		c;
 
-	i = 0;
-	while (i <= ft_strlen(str))
+	head = lst;
+	c = 0;
+	while (head)
 	{
-		if (str[i] == (char)c)
-			return (&((char *)str)[i]);
-		i++;
+		c++;
+		head = head->next;
 	}
-	return (0);
+	return (c);
 }
 /*
-int main ()
+int main()
 {
-  char s[] = "league of legends";
-  int c = 's';
-  printf("%s", ft_strchr(s, c));
+  	t_list *node1;
+  	t_list *node2;
+  	t_list *node3;
+    node1 = ft_lstnew("node1");
+    node2 = ft_lstnew("node2");
+    node3 = ft_lstnew("node3");
+	node1->next = node2;
+	node2->next = node3;
+    printf("%d\n", ft_lstsize(node1));
 }
 */

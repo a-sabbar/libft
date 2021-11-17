@@ -6,26 +6,22 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:57:02 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/10 13:41:02 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:37:45 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-static void	*ft_memset(void *str, int c, size_t n)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((unsigned char *)str)[i] = (unsigned char)c;
-		i++;
-	}
-	return (str);
-}
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
+/*
+int main()
+{
+	char	c[] = "achraf";
+	printf("%s\n", c);
+	ft_bzero(c, 2);
+	printf(".%s", c);
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 12:35:47 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/14 13:18:12 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:09:15 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,11 +94,11 @@ char	**ft_split(char const *s, char c)
 	int		a;
 	char	**p;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	len = words_count((char *)s, c);
 	a = 0;
-	if (!s)
-		return (NULL);
 	p = (char **)malloc(sizeof(char *) * (words_count((char *)s, c) + 1));
 	if (p == NULL)
 		return (NULL);
@@ -106,17 +106,19 @@ char	**ft_split(char const *s, char c)
 	p[len] = NULL;
 	return (p);
 }
-// int    main(void)
-// {
-//     int    i;
-//     char c[] ="b gb ij   bf vs";
+/*
+int    main(void)
+{
+    int    i;
+    char c[] ="b gb ij   bf vs";
 
-//     i = 0;
-//     while (i <= 5)
-//     {
-//         printf("p[%d] = %s \n", i, ft_split(c, ' ')[i]);
-//         i++;
-//     }
-//     // for(i = 0; i <= 4 ;i++)
-//     //         printf("p[%d] = %s \n",i,ft_split(c,' ')[i]);
-// }
+    i = 0;
+    while (i <= 5)
+    {
+        printf("p[%d] = %s \n", i, ft_split(c, ' ')[i]);
+        i++;
+    }
+    // for(i = 0; i <= 4 ;i++)
+    //         printf("p[%d] = %s \n",i,ft_split(c,' ')[i]);
+}
+*/

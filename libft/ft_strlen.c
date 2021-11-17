@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 14:37:23 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/07 19:02:52 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/16 13:16:32 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,8 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+
+// int main()
+// {
+// 	printf("%zu", ft_strlen("achraf"));
+// }

@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 10:40:38 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/07 19:16:34 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/17 12:04:04 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ int	ft_isalpha(int c)
 		return (1);
 	}
 }
+/*
+int	main(void)
+{
+	printf("%d", ft_isalpha(55));
+}
+*/
