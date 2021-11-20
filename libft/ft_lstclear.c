@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:06:17 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:05:29 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:42:27 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*head;
 
+	if (!lst || !del)
+		return ;
 	while (*lst)
 	{
 		head = *lst;
@@ -25,5 +27,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	*lst = NULL;
 }
-/*
-*/

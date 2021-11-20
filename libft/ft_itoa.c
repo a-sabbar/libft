@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 14:39:40 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:05:00 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:44:56 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "libft.h"
 
-int	ft_len(int n)
+static int	ft_len(int n)
 {
 	int	a;
 	int	len;
@@ -31,7 +31,7 @@ int	ft_len(int n)
 	return (len);
 }
 
-char	*ft_p(int n)
+static char	*ft_p(int n)
 {
 	char	*p;
 	int		a;
@@ -42,8 +42,6 @@ char	*ft_p(int n)
 	p = (char *) malloc (len + 1);
 	if (p == NULL)
 		return (NULL);
-	if (n == 0)
-		p[0] = '0';
 	while (n != 0)
 	{
 		len--;
@@ -54,7 +52,7 @@ char	*ft_p(int n)
 	return (p);
 }
 
-char	*ft_n(int n)
+static char	*ft_n(int n)
 {
 	char	*p;
 	int		a;
@@ -80,14 +78,8 @@ char	*ft_n(int n)
 
 char	*ft_itoa(int n)
 {
-	if (n < 0)
+	if (n <= 0)
 		return (ft_n(n));
 	else
 		return (ft_p(n));
 }
-/*
-int main()
-{
-  printf("%s", ft_itoa(214748364));
-}
-*/

@@ -6,15 +6,11 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 12:35:47 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:09:15 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 11:08:39 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
-
-#include<stdlib.h>
 
 static int	words_count(char *s, char c)
 {
@@ -52,14 +48,14 @@ static void	move_word(char *from, char *to, int start, int j)
 	to[a] = '\0';
 }
 
-void	ft_free(char **p, int a)
+static void	ft_free(char **p, int a)
 {
 	while (a >= 0)
 		free(p[--a]);
 	free(p);
 }
 
-void	ft_lastpart(char **p, char const *s, char c)
+static void	ft_mallocnmove(char **p, char const *s, char c)
 {
 	int		i;
 	int		len;
@@ -91,34 +87,16 @@ char	**ft_split(char const *s, char c)
 {
 	int		i;
 	int		len;
-	int		a;
 	char	**p;
 
+	i = 0;
 	if (!s)
 		return (NULL);
-	i = 0;
 	len = words_count((char *)s, c);
-	a = 0;
-	p = (char **)malloc(sizeof(char *) * (words_count((char *)s, c) + 1));
+	p = (char **)malloc(sizeof(char *) * (len + 1));
 	if (p == NULL)
 		return (NULL);
-	ft_lastpart(p, s, c);
+	ft_mallocnmove(p, s, c);
 	p[len] = NULL;
 	return (p);
 }
-/*
-int    main(void)
-{
-    int    i;
-    char c[] ="b gb ij   bf vs";
-
-    i = 0;
-    while (i <= 5)
-    {
-        printf("p[%d] = %s \n", i, ft_split(c, ' ')[i]);
-        i++;
-    }
-    // for(i = 0; i <= 4 ;i++)
-    //         printf("p[%d] = %s \n",i,ft_split(c,' ')[i]);
-}
-*/

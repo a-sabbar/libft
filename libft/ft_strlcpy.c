@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 16:25:52 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/12 17:04:47 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:10:01 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (x);
 }
-// int main()
-// {
-//     const char src[] = "sabbar";
-//     char dest[] = "Achraf";
-//     printf("%u \n", ft_strlcpy(dest, src, 7));
-
-// }

@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:47:31 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:03:35 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:22:42 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,8 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c >= 48 && c <= 57)
-		|| (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
+	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isalnum(48));
-}
-*/

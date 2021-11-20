@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:26:15 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/14 17:46:58 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:11:25 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	a[i] = '\0';
 	return (a);
 }
-// char ascii(unsigned int i, char c)
-// {
-//     return (c - 32);
-// }
-// int main()
-// {
-//     char s[] = "imad";
-//     printf("%s",ft_strmapi(s,ascii));
-// }

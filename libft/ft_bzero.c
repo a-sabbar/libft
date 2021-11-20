@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 14:57:02 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:37:45 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 08:40:46 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
-/*
-int main()
-{
-	char	c[] = "achraf";
-	printf("%s\n", c);
-	ft_bzero(c, 2);
-	printf(".%s", c);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 20:19:55 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:09:40 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:08:37 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,3 @@ char	*ft_strdup(const char *src)
 	copy[i] = '\0';
 	return (copy);
 }
-/*
-int main()
-{
-	char	s[]= "acharf sabbar";
-	printf("%s", ft_strdup(s));
-}
-*/

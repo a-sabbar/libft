@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 10:43:15 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:08:37 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:07:27 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,3 @@ void	ft_putendl_fd(char *s, int fd)
 		ft_putchar_fd('\n', fd);
 	}
 }
-/*
-#include <sys/stat.h>
-#include <fcntl.h>
-int main()
-{
-    int fd;
-    fd = open("tst.txt", O_CREAT | O_RDWR);
-    ft_putendl_fd("Saad", fd);
-}
-*/

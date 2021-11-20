@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 14:31:50 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:07:25 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:05:48 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int main()
-{
-    const char src[] = "sabbr";
-    char dest[] = "achraf";
-    printf(".%s \n", ft_memcpy(dest, src, 5)); 
-    printf(".%s \n", memcpy(dest, src, 5)); 
-}
-*/

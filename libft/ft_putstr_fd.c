@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 10:38:11 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:09:03 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:07:38 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-/*
-#include <sys/stat.h>
-#include <fcntl.h>
-int main()
-{
-    int fd;
-    fd = open("tt.txt", O_CREAT | O_RDWR);
-    ft_putstr_fd("Saad", fd);
-}
-*/

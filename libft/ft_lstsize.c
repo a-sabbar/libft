@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 21:13:46 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:06:42 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:05:34 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (c);
 }
-/*
-int main()
-{
-  	t_list *node1;
-  	t_list *node2;
-  	t_list *node3;
-    node1 = ft_lstnew("node1");
-    node2 = ft_lstnew("node2");
-    node3 = ft_lstnew("node3");
-	node1->next = node2;
-	node2->next = node3;
-    printf("%d\n", ft_lstsize(node1));
-}
-*/

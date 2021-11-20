@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 17:12:36 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:05:22 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 08:43:56 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
-/*
-*/

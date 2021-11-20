@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:55:04 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/17 12:04:19 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 08:43:31 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
-int	main(void)
-{
-	printf("%d", ft_isascii(55));
-}
-*/

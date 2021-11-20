@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 09:58:56 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/16 13:17:41 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:23:30 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (((unsigned char *)str1)[i] - ((unsigned char *)str2)[i]);
 }
-// int main() {
-//     printf("%d\n", ft_strncmp("salut", "salut", 5));
-//     printf("%d", strncmp("salut", "salut", 5));
-//     return 0;
-// }

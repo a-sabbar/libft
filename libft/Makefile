@@ -2,7 +2,7 @@ NAME = libft.a
 
 CC = gcc
 
-AR = ar rc
+AR = ar rcs
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -59,24 +59,19 @@ INCLUDES = libft.h \
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS) $(INCLUDES) $(OBJECTSB)
+$(NAME): $(OBJECTS)
+	$(AR) $(NAME) $(OBJECTS)
 
-	ar rcs $(NAME) $(OBJECTS) $(OBJECTSB)
-
-%.o : %.c
-
+%.o : %.c $(INCLUDES)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
-bonus:	$(OBJECTSB)
-
-	$(AR) $(NAME) $^
+bonus: $(NAME) $(OBJECTSB)
+	$(AR) $^
 
 clean:
-
 	rm -rf $(OBJECTS) $(OBJECTSB)
 
 fclean: clean
-
 	rm -rf $(NAME)
 
 re: fclean all

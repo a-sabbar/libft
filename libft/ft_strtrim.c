@@ -6,7 +6,7 @@
 /*   By: asabbar <asabbar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 10:08:23 by asabbar           #+#    #+#             */
-/*   Updated: 2021/11/13 17:11:00 by asabbar          ###   ########.fr       */
+/*   Updated: 2021/11/19 09:11:44 by asabbar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (s);
 }
-// int main()
-// {
-//   char  s[] = "dfshdfhhdffhfHello \t  Please\n Trim me !\n   \n \n \t\t\n  ";
-//   char  set[] = " \n\t";
-//   printf("%s|", ft_strtrim(s,set));
-// }
