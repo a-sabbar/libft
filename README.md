@@ -1,2 +1,2 @@
 # libft
-My first project in 1337 
+My first project in 42cursus && 1337 
